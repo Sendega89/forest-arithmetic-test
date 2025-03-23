@@ -1,0 +1,26 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-bg);
+}
+.popupContainer {
+    min-width:296px ;
+    border-radius: 16px;
+    background: #20242C;
+    padding: 16px;
+}
+.headSelector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.switch {
+    flex: 1 1 auto;
+}

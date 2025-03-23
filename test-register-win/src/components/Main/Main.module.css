@@ -1,0 +1,6 @@
+.pageWrapper {
+    padding: 0 12px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: auto;
+}

@@ -1,0 +1,67 @@
+.formContainer {
+    margin-top: 24px;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.inputContainer .input input {
+    width: 100%;
+    background: #111419;
+    border-radius: 16px;
+    border: 1px solid #FFFFFF1F;
+    height: 44px;
+    padding: 16px 12px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 12px;
+}
+.checkBoxContainer {
+    margin-top: 24px;
+}
+.checkBoxContainer .checkbox {
+    display: none;
+}
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    color: #8e9094
+}
+
+.checkboxLabel svg {
+    width: 20px;
+    height: 20px;
+    transition: stroke 0.3s ease-in-out;
+}
+.checkbox:checked + .checkboxLabel svg {
+    fill: var(--primary-color);
+}
+.buttonContainer {
+    margin-top: 24px;
+    height: 44px;
+}
+.socialNetworkContainer {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+}
+.socialIconsContainer {
+    display: flex;
+    gap: 8px;
+}
+.forgotPassword {
+    margin-top: 24px;
+    text-align: center;
+  font-size: 12px;
+    color: #8e9094;
+}
+.error {
+    color: red;
+}

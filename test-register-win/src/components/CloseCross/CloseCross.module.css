@@ -1,0 +1,11 @@
+.closeCross {
+    width: 24px;
+}
+
+.closeCross svg {
+    fill: white;
+    color: white;
+}
+.closeCross:hover svg {
+    fill: #4d616c;
+}

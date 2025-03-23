@@ -1,0 +1,9 @@
+.footerContainer {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1017;
+    white-space: nowrap;
+    overflow: hidden;
+}

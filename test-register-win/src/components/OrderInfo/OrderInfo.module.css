@@ -1,0 +1,47 @@
+.infoContainer {
+    margin-top: 12px;
+}
+.title  {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    & span {
+        padding-left: 100px;
+    }
+}
+.infoCardContainer {
+    margin-top: 8px;
+    background: #20242c;
+    width: 100%;
+    min-height: 88px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.topRow {
+    font-size: 16px;
+    font-weight: 700;
+    & span {
+        font-size: 12px;
+        background: #3b3f45;
+        padding:  8px;
+        border-radius: 24px;
+    }
+}
+.bottomRow {
+    font-size: 14px;
+    font-weight: 700;
+    & span {
+        font-size: 12px;
+        text-decoration:line-through;
+        color: #8e9094;
+        padding-left: 4px;
+    }
+}
+.askButtonContainer {
+    margin-top: 12px;
+    height: 44px;
+}
