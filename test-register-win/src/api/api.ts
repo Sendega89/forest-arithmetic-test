@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const instance = axios.create({
 	withCredentials: true,
-	baseURL:"http://localhost:5173/api/"
+	baseURL:"https://forest-arithmetic-test-gbl3.vercel.app/"/*"http://localhost:5173/api/"*/
 
 });
 
