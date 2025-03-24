@@ -2,6 +2,8 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { userAPI } from "../../api/api.ts";
 import { setLoginPopup } from "../popupsReducer.ts";
 
+
+
 export const getLoginUser = createAsyncThunk(
 	"auth",
 	async ({ email, password,setStatus }: { email: string; password: string,setStatus:any }, thunkAPI) => {

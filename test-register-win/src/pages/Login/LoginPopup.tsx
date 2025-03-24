@@ -7,11 +7,14 @@ import CloseCross from "../../components/CloseCross/CloseCross.tsx";
 import AuthRegForm from "./Form/AuthRegForm.tsx";
 
 
+
+
 const LoginPopup:React.FC = () => {
 	const dispatch = useDispatch();
 
 	const handleClickClose = () => {
 		dispatch(setLoginPopup({open:false,type:"login"}))
+
 	}
 	return (
 		<div className={s.wrapper}>

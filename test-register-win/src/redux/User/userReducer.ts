@@ -1,6 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { getLoginUser, getRegisterUser } from "./userThunks.ts";
 import {  UserType } from "../../mocks/handlers.ts";
+import { toast } from "react-toastify";
+
 
 interface userState {
 	user: Omit<UserType, "password"> | null;
@@ -50,10 +52,12 @@ const userSlice = createSlice({
 			.addCase(getRegisterUser.fulfilled, (state, action) => {
 				state.loading = false;
 				state.user = action.payload;
+				toast.success("✅ Registered");
 			})
 			.addCase(getRegisterUser.rejected, (state, action) => {
 				state.loading = false;
 				state.error = action.payload as string;
+				toast.error("❌ Error!");
 			})
 
 	},

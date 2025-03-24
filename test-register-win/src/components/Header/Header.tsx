@@ -4,8 +4,8 @@ import HeaderSelect from "../HeaderSelect/HeaderSelect.tsx";
 import AuthAvatar from "../AuthAvatar/AuthAvatar.tsx";
 
 
-
 const Header = () => {
+
 	return (
 		<header>
 			<div className={s.headerContainer}>

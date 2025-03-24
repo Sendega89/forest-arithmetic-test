@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface popupsState {
 	openLoginPopup: LoginPopupType;
+
 }
 
 type LoginPopupType = {
