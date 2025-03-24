@@ -28,6 +28,7 @@ export const getRegisterUser = createAsyncThunk(
 			const dispatch = thunkAPI.dispatch;
 			const response = await userAPI.register( email, password,confirmPassword );
 			const data = response.data;
+			localStorage.setItem("tokenTest", JSON.stringify(data.token));
 			if (!response) {
 				throw new Error(data.message || "Failed to register");
 			}
