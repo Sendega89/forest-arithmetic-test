@@ -6,12 +6,12 @@ export const instance = axios.create({
 
 });
 
-instance.interceptors.request.use((config) => {
+/*instance.interceptors.request.use((config) => {
 	const token = localStorage.getItem("tokenTest");
 	config.headers.Authorization = `Bearer ${token}`;
 
 	return config;
-});
+});*/
 
 export const userAPI = {
 	login(email: string, password: string) {
