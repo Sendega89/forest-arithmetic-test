@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://forest-arithmetic-test-pu6o-165fhulw6-sendega89s-projects.vercel.app/:path*"
+    }
+  ]
+}
