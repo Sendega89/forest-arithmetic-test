@@ -41,10 +41,12 @@ const userSlice = createSlice({
 			.addCase(getLoginUser.fulfilled, (state, action) => {
 				state.loading = false;
 				state.user = action.payload;
+				toast.success("✅ Registered");
 			})
 			.addCase(getLoginUser.rejected, (state, action) => {
 				state.loading = false;
 				state.error = action.payload as string;
+				toast.error("❌ Error!");
 			})
 			.addCase(getRegisterUser.pending, (state) => {
 				state.loading = true;
