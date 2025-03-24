@@ -12,7 +12,7 @@ const Order: React.FC<Props> = ({ data }) => {
 	const { date, status, gameId, gameName, transactionId, amount,id } = data;
 	return (
 	<div className={s.container} >
-		<Link to={`${id}`}>
+		<Link to={`/orders-list/${id}`}>
 			<div className={s.row}>
 				<div className={s.column}>
 					<div className={s.title}>
